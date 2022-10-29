@@ -17,7 +17,7 @@ body {
 /* Start NavBar */
 
 .navbar {
-  padding: 10px;
+  padding: 10px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,16 +30,13 @@ body {
 .navbar .brand {
   font-size: 22px;
   font-weight: 700;
-  padding: 0px 20px;
   width: 25%;
-  /* margin-right: 25%; */
 }
 
 .navbar .nav-list {
   width: 75%;
-  /* padding-top: 3px; */
   text-align: right;
-  /* position: absolute; */
+
 }
 
 .navbar .nav-list li {
@@ -51,8 +48,6 @@ body {
 
 .navbar .nav-list li.selected {
   color: #22a9bd;
-  /* border-bottom: 2px solid #22a9bd; */
-  border-bottom-width: 1px;
   font-weight: 600;
   text-decoration: underline 2px;
   text-underline-offset: 5px;
@@ -67,10 +62,12 @@ body {
   cursor: pointer;
   background: url(../images/burger1.png) center center;
   background-size: 100% 100%;
+  position: relative;
 }
 .navbar .burger:hover {
-  background: url(../images/burger3.png) center center !important;
+  background: url(../images/burger2.png) center center !important;
 }
+
 
 @media (max-width: 991px) {
   .navbar .burger {
@@ -78,9 +75,12 @@ body {
   }
   .navbar .bgi {
     background: url(../images/burger3.png) center center !important;
-    transform: rotate(90deg);
+    transform: rotate(180deg);
   }
-
+  .navbar .bgi:hover {
+    background: url(../images/burger4.png) center center !important;
+    transform: rotate(180deg);
+  }
   .navbar .nav-list {
     width: 100%;
     display: none;
@@ -101,7 +101,6 @@ body {
 /* Start Header*/
 
 .header {
-  /* background-image: url(images/github.jpg); */
   background: url(../images/github.jpg) no-repeat bottom center;
   color: #fff;
   background-size: cover;
@@ -143,7 +142,6 @@ body {
 }
 
 @media (max-width: 565px) {
-  /* Custom Media */
   .header .overlay h1 {
     margin-top: 50px;
     font-size: 50px;
@@ -165,7 +163,7 @@ body {
 /* Start Features */
 
 .features {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .features .h1 {
@@ -176,7 +174,6 @@ body {
 
 .features .feat {
   color: #555;
-  /* padding-right: 20px; */
   margin-bottom: 20px;
 }
 
@@ -191,7 +188,6 @@ body {
 @media (max-width: 767px) {
   .features .feat {
     width: 100%; /* or float: none;*/
-    /* float: none; */
     text-align: center;
     padding: 0;
   }
@@ -219,7 +215,7 @@ body {
 
 .about-us {
   background-color: #ececec;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .about-us .h1 {
@@ -238,7 +234,7 @@ body {
 
 .our-works {
   background-color: rgb(181 206 224);
-  padding: 20px 5px 5px;
+  padding: 30px 5px 5px;
 }
 
 .our-works .h1 {
@@ -248,15 +244,9 @@ body {
 }
 
 .our-works .image {
-  /* Remove white space below image or */
-  /* font-size: 0; */
   padding: 5px;
 }
 
-.our-works .image img {
-  /* Remove white space below image */
-  display: block;
-}
 
 @media (max-width: 767px) {
   .our-works .image {
@@ -286,7 +276,7 @@ body {
 .pricing-table {
   background-color: #444;
   color: #fff;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .pricing-table .h1 {
@@ -356,7 +346,7 @@ body {
 /* Start What They Say */
 
 .they-say {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .they-say .h1 {
@@ -442,7 +432,7 @@ body {
 
 .information {
   background-color: #ececec;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .information .h1 {
@@ -462,11 +452,9 @@ body {
 .information .info-list li.selected {
   background-color: #fff;
   color: #22a9bd;
-  /* font-weight: 700; */
 }
 
 .information .info-content > div {
-  /* > for Direct Child*/
   background-color: #fff;
   line-height: 2em;
   padding: 10px;
@@ -604,8 +592,6 @@ body {
 /* Start My Framework ================================ */
 
 .container {
-  /* overflow: hidden; */
-  /* background-color: rgba(127, 255, 212, 0.5); */
   margin: auto;
   padding: 0;
 }
@@ -627,10 +613,6 @@ body {
 .visible-xl {
   display: none;
 }
-
-/* .hidden {
-  display: block;
-} */
 
 .float-left {
   float: left;
@@ -666,7 +648,7 @@ body {
 }
 
 .bg-d {
-  /* I use it for test div */
+  /* used for testing */
   background-color: #f32013;
 }
 
@@ -694,7 +676,7 @@ body {
 }
 /* End of Clear Fix*/
 
-/* End  ============================================== */
+/* End My Framework ================================ */
 
 /* Media Query Blueprint*/
 

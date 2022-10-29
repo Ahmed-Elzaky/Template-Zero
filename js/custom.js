@@ -18,6 +18,7 @@ $(function () {
   $('.burger').click(function () {
     $(this).toggleClass('bgi');
     $('.nav-list').toggleClass('show');
+    $('.burger .').toggleClass('show');
   });
 
 });
