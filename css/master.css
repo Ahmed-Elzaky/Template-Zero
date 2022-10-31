@@ -24,7 +24,7 @@ body {
   z-index: 5;
   width: 100%;
   color: #fff;
-  background-color: rgb(46 58 112 / 73%);
+  /* background-color: rgb(46 58 112 / 73%); */
 }
 
 .navbar .brand {
@@ -36,7 +36,6 @@ body {
 .navbar .nav-list {
   width: 75%;
   text-align: right;
-
 }
 
 .navbar .nav-list li {
@@ -44,6 +43,7 @@ body {
   margin-right: 10px;
   font-weight: 500;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .navbar .nav-list li.selected {
@@ -68,6 +68,13 @@ body {
   background: url(../images/burger2.png) center center !important;
 }
 
+.navbar-scroll {
+  background-color: rgb(46 58 112 / 73%);
+  transition: background-color 1s;
+}
+
+.navbar .bgi-b {
+}
 
 @media (max-width: 991px) {
   .navbar .burger {
@@ -187,9 +194,8 @@ body {
 
 @media (max-width: 767px) {
   .features .feat {
-    width: 100%; /* or float: none;*/
+    width: 100%; /* to cancel float */
     text-align: center;
-    padding: 0;
   }
   .features .feat:nth-of-type(odd) {
     background-color: rgba(129, 212, 191, 0.1);
@@ -246,7 +252,6 @@ body {
 .our-works .image {
   padding: 5px;
 }
-
 
 @media (max-width: 767px) {
   .our-works .image {
@@ -400,6 +405,9 @@ body {
   .they-say .person-say:not(:first-of-type) {
     width: 49%;
   }
+  .they-say .person-say:not(:first-of-type) p {
+    text-align: center;
+  }
   .they-say .person-say:nth-of-type(2) {
     margin-right: 2%;
   }
@@ -530,7 +538,6 @@ body {
 /* sm Small */
 @media (min-width: 576px) and (max-width: 767px) {
   .container {
-    width: 90%; /* 600 - 30 (padding) */
   }
   .visible-sm {
     display: block !important;
@@ -546,7 +553,7 @@ body {
 /* md Medium */
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
-    width: 85%; /* 780 - 30 (padding) */
+    width: 750px; /* 780 - 30 (padding) */
   }
   .visible-md {
     display: block !important;
@@ -561,7 +568,7 @@ body {
 /* lg large*/
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
-    width: 80%; /* 1000 - 30 (padding) */
+    width: 970px; /* 1000 - 30 (padding) */
   }
   .visible-lg {
     display: block !important;
@@ -576,7 +583,7 @@ body {
 /* xl Extra Large*/
 @media (min-width: 1200px) {
   .container {
-    width: 70%; /* 1200 - 30 (padding) */
+    width: 1170px; /* 1200 - 30 (padding) */
   }
   .visible-xl {
     display: block !important;
@@ -593,7 +600,7 @@ body {
 
 .container {
   margin: auto;
-  padding: 0;
+  padding: 0 15px;
 }
 
 .text-left {
