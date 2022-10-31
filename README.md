@@ -1,5 +1,5 @@
-# responsive-design-elzaky
+# Responsive Web Design Template <ins>Zero</ins>
 #### Demo
 https://ahmed-elzaky.github.io/responsive-design-elzaky/
 
-Thanks to Elzero Web School.
+### [Big Thanks to Elzero Web School](https://elzero.org/)
