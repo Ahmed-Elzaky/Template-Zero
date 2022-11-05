@@ -485,13 +485,16 @@ body {
   .information .info-list li {
     display: block;
   }
+  .information .info-content > div {
+  padding: 5px;
+}
   .information .info-content > div .image {
     float: none;
     margin: 0 auto;
   }
   .information .info-content > div p {
     float: none;
-    margin: 0 auto 10px;
+    margin: 0 auto;
   }
 }
 /* End Information */
