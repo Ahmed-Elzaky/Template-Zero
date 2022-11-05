@@ -490,10 +490,9 @@ body {
     margin: 0 auto;
   }
   .information .info-content > div p {
-    width: calc(100% - 110px);
     float: none;
-    margin: 0 auto;
-}
+    margin: 0 auto 10px;
+  }
 }
 /* End Information */
 
