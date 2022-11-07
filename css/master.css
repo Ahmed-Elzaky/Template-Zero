@@ -17,7 +17,7 @@ body {
 /* Start NavBar */
 
 .navbar {
-  padding: 10px 0;
+  padding: 20px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -71,6 +71,7 @@ body {
 .navbar-scroll {
   background-color: rgb(46 58 112 / 73%);
   transition: background-color 1s;
+  padding: 10px 0;
 }
 
 .navbar .bgi-b {
